@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hora de arriesgarse</title>
-
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      function handleClick() {
+        // Redirigir a la página deseada
+        window.location.href = 'yes.html';
+
+        // Enviar el mensaje de WhatsApp
+        const phoneNumber = '947116784'; // Reemplaza con el número de teléfono
+        const message = 'La respuesta a si quiero que seas mi enamorado es si!!!!!';
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappUrl, '_blank');
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -25,12 +37,12 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h2>Señor Joseph Gallet Ramon Caldas</h1>
-      <h2>Puedo ser tu enamorado? 🤗</h1>
+      <h2>Señor Joseph Gallet Ramon Caldas</h2>
+      <h2>Puedo ser tu enamorado? 🤗</h2>
       <p>Di que si U.u</p>
 
       <div class="btn">
-        <a href="yes.html">SI</a>
+        <button onclick="handleClick()">SI</button>
         <a href="no1.html">NO</a>
       </div>
     </div>
