@@ -5,6 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hora de arriesgarse</title>
+  <script>
+    function handleClick() {
+      // Redirigir a la página deseada
+      window.location.href = 'yes.html';
+
+      // Enviar el mensaje de WhatsApp
+      const phoneNumber = '947116784'; // Reemplaza con el número de teléfono
+      const message = 'Lo siento, no quiero estar contigo';
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
 
   <link rel="stylesheet" href="./style.css" />
 </head>
@@ -21,8 +34,8 @@
     <p>No seas malo u.u</p>
 
     <div class="btn">
-      <a href="yes.html">Yes</a>
-      <a href="no3.html">No</a>
+      <a href="yes.html">SI</a>
+      <button class="btn-link" onclick="handleClick()">NO</button>
     </div>
   </div>
 </body>
